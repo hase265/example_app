@@ -1,6 +1,18 @@
 <% provide(:title, "トップ") %>
 <h1>トップ</h1>
 <p>
-  これは<a href="http://www.frontale.co.jp/">川崎フロンターレ</a>
-  を応援する人たちのためのSNSです
+
 </p>
+<div class="center jumbotron">
+  <h1>フロンページへようこそ！</h1>
+
+  <h2>
+    これは<a href="http://www.frontale.co.jp/">川崎フロンターレ</a>
+    を応援する人たちのためのSNSです
+  </h2>
+
+  <%= link_to "新規登録してください", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("frontale.png", alt: "Rails logo"),
+  "http://www.frontale.co.jp/" %>
